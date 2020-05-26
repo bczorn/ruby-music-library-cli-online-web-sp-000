@@ -107,7 +107,7 @@ class MusicLibraryController
       songs = Song.all.sort {|a,b| a.name <=> b.name}
       x = songs.at(f - 1)
       puts "Playing #{x.name} by #{x.artist.name}"
-      binding.pry
+      
     end
   end
 
