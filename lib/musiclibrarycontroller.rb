@@ -96,6 +96,10 @@ class MusicLibraryController
     end
   end
   
+  def play_song
+    puts "Please enter the name of a song:"
+    
+  end
 
     
   end
