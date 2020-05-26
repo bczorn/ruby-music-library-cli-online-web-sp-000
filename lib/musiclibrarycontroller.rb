@@ -105,7 +105,7 @@ class MusicLibraryController
     binding.pry
     if (1..j).include?(f)
       songs = Song.all.sort {|a,b| a.name <=> b.name}
-      x = songs.fetch(f - 1)
+      x = songs.at(f - 1)
       puts "Playing #{x.name} by #{x.artist.name}"
       binding.pry
     end
