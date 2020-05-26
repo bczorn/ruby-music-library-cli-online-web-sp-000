@@ -105,7 +105,7 @@ class MusicLibraryController
     for input in 1..j
       songs = Song.all.sort{|a,b| a.name <=> b.name}
       x = songs.fetch(input - 1)
-      puts "Playing #{x.artist.name} by #{x.name}"
+      puts "Playing #{x.name} by #{x.artist.name}"
     end
   end
 
