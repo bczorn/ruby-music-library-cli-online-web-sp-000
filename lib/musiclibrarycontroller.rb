@@ -100,7 +100,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip
-    input.to_i
+    f = input.to_i
     j = Song.all.length
     binding.pry
     if (1..j).include?(input)
