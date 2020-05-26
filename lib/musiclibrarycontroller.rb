@@ -102,6 +102,11 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip
+
+    if 1 <= input <= @song_list.length
+      x 
+      puts "Playing #{} by #{}"
+    end
   end
 
     
