@@ -106,7 +106,6 @@ class MusicLibraryController
       songs = Song.all.sort{|a,b| a.name <=> b.name}
       x = songs.fetch(input - 1)
       puts "Playing #{x.name} by #{x.artist.name}"
-    else
     end
   end
 
