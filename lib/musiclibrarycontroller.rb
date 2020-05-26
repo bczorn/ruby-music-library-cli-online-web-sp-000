@@ -80,7 +80,7 @@ class MusicLibraryController
         index += 1
         puts "#{index}. #{s.name} - #{s.genre.name}"
       end
-  end
+    end
   end
   
   def list_songs_by_genre
