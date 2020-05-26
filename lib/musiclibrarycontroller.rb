@@ -74,7 +74,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.strip
     i = Artist.find_by_name(input)
-    x = i.songs
+    
     x.each_with_index do |x, index|
       index += 1
       puts "#{index}. #{x.name} - #{x.genre}"
