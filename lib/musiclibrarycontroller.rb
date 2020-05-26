@@ -100,7 +100,6 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip
-    binding.pry
     if input.between?(1, list_songs.length)
       x = list_songs.fetch(input)
       puts "Playing #{x.artist.name} by #{x.name}"
