@@ -48,6 +48,7 @@ class MusicLibraryController
     array = Song.all.sort {|a,b| a.name <=> b.name}
     array.each_with_index do |x, index|
       index += 1
+      @song_list << x
       puts "#{index}. #{x.artist.name} - #{x.name} - #{x.genre.name}"
     end
   end
