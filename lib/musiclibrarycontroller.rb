@@ -97,7 +97,7 @@ class MusicLibraryController
   end
   
   def play_song
-    puts "Which song numbeer would you like to play?:"
+    puts "Which song numbeer would you like to play?"
     input = gets.strip
   end
 
