@@ -100,7 +100,8 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip
-    if input.between?(1,Song.all.length) == true
+    i = Song.all.length
+    if input.between?(1,i) == true
       songs = Song.all.sort{|a,b| a.name <=> b.name}
       x = songs.fetch(input)
       puts "Playing #{x.artist.name} by #{x.name}"
