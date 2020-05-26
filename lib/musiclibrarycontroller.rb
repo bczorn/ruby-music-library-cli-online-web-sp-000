@@ -75,9 +75,9 @@ class MusicLibraryController
     input = gets.strip
     i = Artist.find_by_name(input)
     x = i.songs
-    i.each_with_index do |i, index|
+    x.each_with_index do |x, index|
       index += 1
-      puts "#{index}. #{i.name} - #{i.genre}"
+      puts "#{index}. #{x.name} - #{x.genre}"
     end
   end
   
