@@ -101,7 +101,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip
     i = Song.all.length
-    if input == inte
+    if input.is_an_int
       songs = Song.all.sort{|a,b| a.name <=> b.name}
       x = songs.fetch(input)
       puts "Playing #{x.artist.name} by #{x.name}"
