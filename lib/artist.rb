@@ -33,4 +33,12 @@ class Artist
     x
   end
   
+    def songs
+    x = []
+    @songs.each do |i|
+      x << i.song unless x.include?(i.song)
+    end
+    x
+  end
+  
 end
