@@ -103,7 +103,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip
 
-    if 1 <= input <= @song_list.length
+    if input.between? <= @song_list.length
       x =  @song_list.fetch(input)
       puts "Playing #{x.artist.name} by #{x.name}"
     end
