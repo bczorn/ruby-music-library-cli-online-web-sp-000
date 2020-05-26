@@ -91,7 +91,7 @@ class MusicLibraryController
       array = genre.songs.sort {|a,b| a.name <=> b.name}
       array.each_with_index do |s, index|
         index += 1
-        puts "#{index}. #{s.name} - #{s.artist.name}"
+        puts "#{index}. #{s.artist.name} - #{s.name}"
       end
     end
   end
